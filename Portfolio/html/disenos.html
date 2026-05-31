@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Diseños — Arisleidy</title>
+  <meta name="description" content="Galería de diseños de Arisleidy Paulino Polanco." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Italiana&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/disenos.css" />
+</head>
+<body>
+  <header class="site-header site-header--hero site-header--light" style="--nav-bg:url('../img/fondo-beiche.jpeg');">
+    <div class="site-header__inner">
+      <a class="site-logo" href="../index.html">Arisleidy Paulino Polanco</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <a href="../index.html">About</a>
+        <a href="work.html" class="semi-active">Work</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="designs-hero">
+    <img class="hero-bg" src="../img/fondo-beiche.jpg" alt="Fondo Mis Diseños" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="page-title">Mis Diseños</h1>
+      <a href="work.html" class="back-link">← Volver a Work</a>
+    </div>
+  </section>
+
+  <section class="portfolio-section">
+    <div class="portfolio-container">
+      <div class="slider-header">
+        <button class="nav-button" id="prevSlide" aria-label="Anterior">‹</button>
+        <h2 class="project-title" id="designTitle">—</h2>
+        <button class="nav-button" id="nextSlide" aria-label="Siguiente">›</button>
+      </div>
+
+      <div class="image-wrapper" id="stage">
+        <img class="project-image" id="designImage" src="" alt="" />
+      </div>
+
+      <div class="image-dots" id="dots"></div>
+      <p class="project-description" id="designDesc"></p>
+    </div>
+  </section>
+
+  <footer class="footer">© <span id="year"></span> Arisleidy Paulino Polanco</footer>
+
+  <template id="designsData">
+    <article
+      data-nombre="Diseño 1 — Plataforma Educativa"
+      data-desc="Plataforma conceptual diseñada para ayudar a estudiantes a organizar tareas, cursos y actividades académicas."
+      data-imagenes="../img/inkluya/1.jpeg,../img/inkluya/2.jpeg,../img/inkluya/3.jpeg,../img/inkluya/4.jpeg,../img/inkluya/5.jpeg,../img/inkluya/6.jpeg,../img/inkluya/7.jpeg,../img/inkluya/8.jpeg,../img/inkluya/9.jpeg"
+    ></article>
+    <article
+      data-nombre="Diseño 2 — Login & Registro"
+      data-desc="Interfaz de autenticación con enfoque editorial moderno para un sistema de reclutamiento."
+      data-imagenes="../img/reclutamiento/1.jpeg,../img/reclutamiento/2.jpeg,../img/reclutamiento/3.jpeg,../img/reclutamiento/4.jpeg,../img/reclutamiento/5.jpeg,../img/reclutamiento/6.jpeg,../img/reclutamiento/7.jpeg,../img/reclutamiento/8.jpeg,../img/reclutamiento/9.jpeg,../img/reclutamiento/10.jpeg,../img/reclutamiento/11.jpeg,../img/reclutamiento/12.jpeg,../img/reclutamiento/13.jpeg,../img/reclutamiento/14.jpeg,../img/reclutamiento/15.jpeg,../img/reclutamiento/16.jpeg,../img/reclutamiento/17.jpeg,../img/reclutamiento/18.jpeg,../img/reclutamiento/19.jpeg,../img/reclutamiento/20.jpeg,../img/reclutamiento/21.jpeg,../img/reclutamiento/22.jpeg,../img/reclutamiento/23.jpeg,../img/reclutamiento/24.jpeg,../img/reclutamiento/25.jpeg,../img/reclutamiento/26.jpeg,../img/reclutamiento/27.jpeg"
+    ></article>
+    <article
+      data-nombre="Diseño 3 — Dashboard Reservas"
+      data-desc="Sistema visual para la gestión de reservas de una agencia de viajes con tarjetas dinámicas y panel administrativo."
+      data-imagenes="../img/maw/1.jpeg,../img/maw/2.jpeg,../img/maw/3.jpeg,../img/maw/4.jpeg,../img/maw/5.jpeg,../img/maw/6.jpeg,../img/maw/7.jpeg"
+    ></article>
+  </template>
+
+  <script src="../js/disenos.js"></script>
+</body>
+</html>

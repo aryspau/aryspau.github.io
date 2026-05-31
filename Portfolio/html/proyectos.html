@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Proyectos — Arisleidy</title>
+  <meta name="description" content="Proyectos de Arisleidy Paulino Polanco." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Italiana&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/proyectos.css" />
+</head>
+<body>
+  <header class="site-header site-header--hero site-header--light" style="--nav-bg:url('../img/fondo-marron.jpeg');">
+    <div class="site-header__inner">
+      <a class="site-logo" href="../index.html">Arisleidy Paulino Polanco</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <a href="../index.html">About</a>
+        <a href="work.html" class="semi-active">Work</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="projects-hero">
+    <img class="hero-bg" src="../img/fondo-marron.jpg" alt="Fondo Mis Proyectos" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <a href="work.html" class="back-link">← Volver a Work</a>
+      <h1 class="page-title">Mis Proyectos</h1>
+    </div>
+  </section>
+
+  <section class="coverflow-section">
+    <div class="coverflow" id="coverflow"></div>
+    <div class="proj-info">
+      <h2 id="projName"></h2>
+      <p id="projDesc"></p>
+      <div class="tags" id="projTags"></div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="gallery-stage">
+      <img id="galleryImg" src="" alt="" />
+    </div>
+    <div class="thumbs" id="thumbs"></div>
+  </section>
+
+  <footer class="footer">© <span id="year"></span> Arisleidy Paulino Polanco</footer>
+
+  <template id="projectsData">
+    <article
+      data-nombre="Maw Viajes"
+      data-desc="Sistema de gestión de reservas para una agencia de viajes con autenticación y panel administrativo."
+      data-tecnologias="HTML,CSS,JavaScript"
+      data-imagenes="../img/maw-pro/1.jpeg,../img/maw-pro/2.jpeg,../img/maw-pro/3.jpeg,../img/maw-pro/4.jpeg,../img/maw-pro/5.jpeg,../img/maw-pro/6.jpeg,../img/maw-pro/7.jpeg,../img/maw-pro/8.jpeg,../img/maw-pro/9.jpeg,../img/maw-pro/10.jpeg"
+    ></article>
+    <article
+      data-nombre="Plataforma Educativa"
+      data-desc="Plataforma conceptual desarrollada como ejercicio académico para explorar el uso de SVG en interfaces web. El proyecto se enfoca en la construcción visual de una página educativa, utilizando gráficos vectoriales, composición de elementos interactivos y diseño de interfaz. Aunque no cuenta con funcionalidades completas ni navegación implementada, sirvió como práctica para comprender la integración de SVG, la estructura de componentes visuales y la creación de experiencias más dinámicas dentro del frontend."
+      data-tecnologias="HTML,CSS,JavaScript,SVG"
+      data-imagenes="../img/img-inicios.jpeg"
+    ></article>
+    <article
+      data-nombre="ElectroVentos"
+      data-desc="Plataforma web para una empresa de soluciones energéticas y climatización. Permite consultar servicios, solicitar instalaciones y mantenimientos, además de explorar productos como paneles solares y aires acondicionados."
+      data-tecnologias="HTML,CSS,JavaScript"
+      data-imagenes="../img/electro/1.jpeg,../img/electro/2.jpeg,../img/electro/3.jpeg,../img/electro/4.jpeg,../img/electro/5.jpeg,../img/electro/6.jpeg,../img/electro/7.jpeg,../img/electro/8.jpeg,../img/electro/9.jpeg,../img/electro/10.jpeg,../img/electro/11.jpeg,../img/electro/12.jpeg,../img/electro/13.jpeg,../img/electro/14.jpeg,../img/electro/15.jpeg"
+    ></article>
+  </template>
+
+  <script src="../js/proyectos.js"></script>
+</body>
+</html>
